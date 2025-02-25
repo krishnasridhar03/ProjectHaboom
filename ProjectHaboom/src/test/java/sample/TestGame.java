@@ -19,8 +19,7 @@ public class TestGame {
 		play.login();
 		play.slotsdashboard();
 	}
-	
-     
+
 	public void setup() {
     	WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -43,7 +42,7 @@ public class TestGame {
 		for (String handle:driver.getWindowHandles()) {
 			driver.switchTo().window(handle);
 		}
-		driver.findElement(By.id("gameCanvas"))
+		driver.findElement(By.id("gameCanvas"));
 	}
 }
 	
